@@ -1,0 +1,3 @@
+Belgium, 900
+Austria, 726
+Spain, 1000

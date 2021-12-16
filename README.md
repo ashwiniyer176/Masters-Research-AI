@@ -1,40 +1,24 @@
-# Template Repository for Machine Learning Projects 
+# Data Analysis on Best Countries for Post Graduation in AI/ML
 
- This is the template repository for all Machine Learning based Projects as mentioned by **Abhishek Thakur**, in his book **Appraoching (Almost) Any Machine Learning Problem**. The folder structure is as follows:
-<br>
+This repository contains all the code and data written to help students make informed choices with regards where they want to pursue a Post Graduation outside of India. 
 
 ## Structure:
 
-1. data : This folder consists of all the input files and data for your machine learning project. If you are working on NLP projects, you can keep your embeddings here. If you are working on image projects, all images go to a subfolder inside this folder. 
+1. data : This folder consists of all the input files and data for the project. All `.txt` files here can be used and modified.
 
+2.  src: Contains generic Python scripts which can be used for modelling.
 
-2.  src: We will keep all the python scripts associated with the project here. If I talk about a python script, i.e. any *.py file, it is stored in the src folder. 
+3.  models: Contains trained model weights/serialized models
 
-
-3.  models: This folder keeps all the trained models.   
-
-
-4.  notebooks: All jupyter notebooks (i.e. any *.ipynb file) are stored in the notebooks folder. 
-
-
-5.  README.md: This is a markdown file where you can describe your project and write instructions on how to train the model or to serve this in a production environment. 
-
-
-6.  LICENSE: This is a simple text file that consists of a license for the project, such as MIT, Apache, etc. Going into details of the licenses is beyond the scope of this book.
-<br>
+4.  notebooks: Contains all jupyter notebooks (i.e. any *.ipynb file) are stored in the notebooks folder. 
 
 ## Usage:
-1. Use the notebook `notebooks/Preprocessing.ipynb` to begin preprocessing
-2. Save the dataset after preprocessing as `final_train.csv`
-3. Use the notebook `notebooks/EDA.ipynb` for Exploratory Data Analysis and shortlisting models
-4. Open `src/config.py`
-5. Select a model (sklearn model instance) and a metric (sklearn metric)
-6. Configure number of folds required
-7. Open Command Prompt and run the `createFoldsAndRun.bat`
+1. Use the notebook `notebooks/EDA.ipynb` for Exploratory Data Analysis and viewing results of analysis.
+2. The `../data/NoFees.txt` contains a list of countries that provide free Post Graduation programmes for Indian Students.
+3. The `../data/AIBest.txt` contains a list of countries that provide the best Post Graduation programmes for Artificial Intelligence and Machine Learning.
 
-
-Note: The objective for doing this is to build a framework which ensures that running most models becomes simple plug and play, enabling a much faster pace of development and experimentation.
-
+**These lists(`./data/*.txt`) are not complete and I encourage you to add information about countries that you know of to these lists that qualify the criteria of the list for the benefit of everyone!**
 <br>
 
-For the purposes of this repository, I am using [Heart Failure Prediction Dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data), whereas the author uses MNIST in CSV format.
+## Dataset
+For the purposes of this repository, I am using [Cost of Living 2020 Dataset](https://www.kaggle.com/andradaolteanu/2020-cost-of-living?select=cost+of+living+2020.csv) to start off with, and am generating more features and metrics.
